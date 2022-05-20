@@ -34,6 +34,7 @@ export default class inputTime extends React.Component {
     const date = new Date();
     date.setHours(time.split(":")[0]);
     date.setMinutes(time.split(":")[1]);
+    date.setSeconds(time.split(":")[2]);
     this.props.onChange(date);
   };
 
